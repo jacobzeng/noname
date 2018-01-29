@@ -2796,10 +2796,10 @@ game.import('character',function(lib,game,ui,get,ai,_status){
     				return false;
     			},
     			content:function(){
-    				'step 0'
-    				player.hp=Math.min(3,player.maxHp);
+    				'step 0'    				
     				player.discard(player.getCards('hej'));
-    				player.draw(3);
+    				player.draw(3); 
+                    player.hp=Math.min(3,player.maxHp);
     				player.awakenSkill('niepan');
     				player.storage.niepan=true;
     				'step 1'
